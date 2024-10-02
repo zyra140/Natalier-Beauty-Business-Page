@@ -1,0 +1,76 @@
+body {
+  background-color: #e6dace;
+}
+
+.menu-tab {
+  height: 1100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-image: url(images/background-image.png);
+  background-repeat: initial;
+  background-position: center;
+  background-size: cover;
+  background-color: #e6dace;
+  border: none;
+  border-color: rgb(212, 188, 110);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.logo-natalier {
+  height: 1000px;
+  width: 1000px;
+}
+
+.booking-button {
+  height: 100px;
+  width: 300px;
+  border: solid;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 25px;
+  color: black;
+  cursor: pointer;
+  background-color: #ecd49ee3;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.categories-menu {
+  height: 100%;
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.categories-box {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.categories-photo {
+  height: 10%;
+  width: 10%;
+}
+
+.social-hub {
+  height: 100%;
+  width: 100%;
+  margin-top: 100px;
+  border-top: solid 1px;
+  display: flex;
+  align-items: end;
+  justify-content: space-around;
+}
