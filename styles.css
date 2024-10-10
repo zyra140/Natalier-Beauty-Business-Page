@@ -35,9 +35,6 @@ h1 {
   margin-top: 50px;
 }
 
-h2 {
-}
-
 .booking-button,
 .contact-button {
   font-size: 15px;
@@ -64,6 +61,7 @@ h2 {
 .buttons-box:hover {
   box-shadow: 40px 0 100px rgba(218, 165, 32, 0.507),
     -40px 0 100px rgba(255, 217, 0, 0.445);
+  cursor: pointer;
 }
 
 .buttons-icon {
@@ -100,6 +98,7 @@ h2 {
 
 .categories-box p {
   margin: 0;
+  margin-top: -30px;
   padding: 0;
   text-align: center;
 }
@@ -115,7 +114,17 @@ h2 {
   margin-left: 15px;
 }
 
+/* FOOTER @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+.relative-footer {
+  position: relative;
+  margin-top: 150px;
+}
+
 .social-hub {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   height: 80px;
   background-color: #ffffff36;
   margin-top: 100px;
@@ -141,4 +150,79 @@ h2 {
 .social-icon {
   height: 70px;
   width: 70px;
+}
+
+/* POP UP @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+.contact-popup {
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+}
+
+.contact-popup .overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  display: none;
+}
+
+.contact-popup.active .overlay {
+  display: block;
+}
+
+.contact-popup .popup-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 600;
+  transform: translate(-50%, -50%) scale(0);
+  background-color: #c2b19c;
+  width: 380px;
+  z-index: 2;
+  border-radius: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px 30px;
+}
+
+.contact-popup.active .popup-info {
+  transition: all 300ms ease-in-out;
+  transform: translate(-50%, -50%) scale(1.25);
+}
+
+.contact-popup .close-popup-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: #271a0a;
+  color: #c2b19c;
+  text-align: center;
+  line-height: 26px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.popup-info h2 {
+  text-align: center;
+  color: #271a0a;
+  margin: 10px 0px 20px;
+  font-size: 25px;
+}
+
+.popup-box {
+  margin: 15px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.popup-icon {
+  height: 75px;
+  width: 75px;
 }

@@ -1,6 +1,11 @@
-<header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Natalier.no</title>
   <link rel="stylesheet" href="styles.css" />
-</header>
+</head>
 <body>
   <div class="menu-tab">
     <img
@@ -19,7 +24,7 @@
         Bestill time</a
       >
       </div>
-      <div class="buttons-box">  
+      <div class="buttons-box" onclick="togglePopup()">  
         <a class="contact-button href="">Kontakt</a>
       </div>
       <h1>Bli med i vår gruppe av fornøyde kunder!</h1>
@@ -68,30 +73,67 @@
     </div>
   </div>
   <h1>Mer kommer snart!</h1>
-  <div class="social-hub">
-    <div class="social-box">
-      <img
-        class="social-icon"
-        src="icons/Projekt bez nazwy (2).png"
-        alt="phone number icon"
-      />
-      <p class="social-info">92552906</p>
-    </div>
-    <div class="social-box">
-      <img
-        class="social-icon"
-        src="icons/ikona insta.png"
-        alt="phone number icon"
-      />
-      <p class="social-info">@natalier.no</p>
-    </div>
-    <div class="social-box">
-      <img
-        class="social-icon"
-        src="icons/ikonamail.png"
-        alt="e-mail adress icon"
-      />
-      <p class="social-info">natalier.no@gmail.com</p>
+  <!-- FOOTER  --> 
+  <div class="relative-footer">
+    <div class="social-hub">
+      <div class="social-box">
+        <img
+          class="social-icon"
+          src="icons/Projekt bez nazwy (2).png"
+          alt="phone number icon"
+        />
+        <p class="social-info">92552906</p>
+      </div>
+      <div class="social-box">
+        <img
+          class="social-icon"
+          src="icons/ikona insta.png"
+          alt="phone number icon"
+        />
+        <p class="social-info">@natalier.no</p>
+      </div>
+      <div class="social-box">
+        <img
+          class="social-icon"
+          src="icons/ikonamail.png"
+          alt="e-mail adress icon"
+        />
+        <p class="social-info">natalier.no@gmail.com</p>
+      </div>
     </div>
   </div>
+  <!-- POP UP -->
+  <div class="contact-popup" id="contact-popup">
+    <div class="overlay"></div>
+    <div class="popup-info">
+      <div class="close-popup-button" onclick="togglePopup()">&times;</div>
+        <h2>Kontakt</h2>
+        <div class="popup-box">
+          <img
+            class="popup-icon"
+            src="icons/Projekt bez nazwy (2).png"
+            alt="telephone icon"
+          />
+          <a>92 55 29 06</a>
+        </div>
+        <div class="popup-box">
+          <img class="popup-icon" src="icons/logo tel.png" alt="booking icon" />
+          <a>Bestill time</a>
+        </div>
+        <div class="popup-box">
+        <img
+            class="popup-icon"
+            src="icons/ikona insta.png"
+            alt="instagram icon"
+          />
+        <a>@natalier.no</a>
+      </div>
+      <div class="popup-box">
+        <img class="popup-icon" src="icons/ikonamail.png" alt="e-mail icon" />
+        <a>natalier.no@gmail.com</a>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
+
