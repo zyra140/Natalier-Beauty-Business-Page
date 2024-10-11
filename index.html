@@ -7,130 +7,133 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="menu-tab">
-    <img
-      class="logo-natalier"
-      src="images/natalier-logo-without-border.png"
-      alt="Natalier buauty company logo"
-    />
-    <div class="buttons-tab">
-      <div class="buttons-box">
-        <a
-        class="booking-button"
-        href="http://bestill.timma.no/natelier"
-        Bestill
-        time
-      >
-        Bestill time</a
-      >
-      </div>
-      <div class="buttons-box" onclick="togglePopup()">  
-        <a class="contact-button href="">Kontakt</a>
-      </div>
-      <h1>Bli med i vår gruppe av fornøyde kunder!</h1>
-    </div>
-  </div>
-  <div class="categories-menu">
-    <div class="categories-box">
-      <img
-        class="categories-photo"
-        src="images/vippeekstensjon.png"
-        alt="Vippeekstensjon"
-      />
-      <p class="categories-name">Vippeekstensjon</p>
-    </div>
-    <div class="categories-box">
-      <img
-        class="categories-photo"
-        src="images/negler.JPG"
-        alt="Vippeekstensjon"
-      />
-      <p class="categories-name">Negler</p>
-    </div>
-    <div class="categories-box">
-      <img
-        class="categories-photo"
-        src="images/Farging og forming av bryn .png"
-        alt="Vippeekstensjon"
-      />
-      <p class="categories-name">Farging og forming av bryn</p>
-    </div>
-    <div class="categories-box">
-      <img
-        class="categories-photo"
-        src="images/vippeløft3.png"
-        alt="Vippeekstensjon"
-      />
-      <p class="categories-name">Vippeløft</p>
-    </div>
-    <div class="categories-box">
-      <img
-        class="categories-photo"
-        src="images/Brynlaminering.png"
-        alt="Vippeekstensjon"
-      />
-      <p class="categories-name">Brynlaminering</p>
-    </div>
-  </div>
-  <h1>Mer kommer snart!</h1>
-  <!-- FOOTER  --> 
-  <div class="relative-footer">
-    <div class="social-hub">
-      <div class="social-box">
+  <div class="site">
+    <header>
+      <div class="menu-tab">
         <img
-          class="social-icon"
-          src="icons/Projekt bez nazwy (2).png"
-          alt="phone number icon"
+          class="logo-natalier"
+          src="images/natalier-logo-without-border.png"
+          alt="Natalier buauty company logo"
         />
-        <p class="social-info">92552906</p>
+        <div class="buttons-tab">
+          <a class="buttons-box"
+            href="http://bestill.timma.no/natelier"
+            target="_blank"
+          >
+            Bestill time
+          </a>
+          <div class="buttons-box" onclick="togglePopup()">  
+            <a class="contact-button href="">Kontakt</a>
+          </div>
+          <h1>Bli med i vår gruppe av fornøyde kunder!</h1>
+        </div>
       </div>
-      <div class="social-box">
-        <img
-          class="social-icon"
-          src="icons/ikona insta.png"
-          alt="phone number icon"
-        />
-        <p class="social-info">@natalier.no</p>
-      </div>
-      <div class="social-box">
-        <img
-          class="social-icon"
-          src="icons/ikonamail.png"
-          alt="e-mail adress icon"
-        />
-        <p class="social-info">natalier.no@gmail.com</p>
-      </div>
-    </div>
-  </div>
-  <!-- POP UP -->
-  <div class="contact-popup" id="contact-popup">
-    <div class="overlay"></div>
-    <div class="popup-info">
-      <div class="close-popup-button" onclick="togglePopup()">&times;</div>
-        <h2>Kontakt</h2>
-        <div class="popup-box">
+    </header>
+    <main>
+      <div class="categories-menu">
+        <div class="categories-box">
           <img
-            class="popup-icon"
-            src="icons/Projekt bez nazwy (2).png"
-            alt="telephone icon"
+            class="categories-photo"
+            src="images/vippeekstensjon.png"
+            alt="Vippeekstensjon"
           />
-          <a>92 55 29 06</a>
+          <p class="categories-name">Vippeekstensjon</p>
         </div>
-        <div class="popup-box">
-          <img class="popup-icon" src="icons/logo tel.png" alt="booking icon" />
-          <a>Bestill time</a>
-        </div>
-        <div class="popup-box">
-        <img
-            class="popup-icon"
-            src="icons/ikona insta.png"
-            alt="instagram icon"
+        <div class="categories-box">
+          <img
+            class="categories-photo"
+            src="images/negler.JPG"
+            alt="Vippeekstensjon"
           />
-        <a>@natalier.no</a>
+          <p class="categories-name">Negler</p>
+        </div>
+        <div class="categories-box">
+          <img
+            class="categories-photo"
+            src="images/Farging og forming av bryn .png"
+            alt="Vippeekstensjon"
+          />
+          <p class="categories-name">Farging og forming av bryn</p>
+        </div>
+        <div class="categories-box">
+          <img
+            class="categories-photo"
+            src="images/vippeløft3.png"
+            alt="Vippeekstensjon"
+          />
+          <p class="categories-name">Vippeløft</p>
+        </div>
+        <div class="categories-box">
+          <img
+            class="categories-photo"
+            src="images/Brynlaminering.png"
+            alt="Vippeekstensjon"
+          />
+          <p class="categories-name">Brynlaminering</p>
+        </div>
       </div>
-      <div class="popup-box">
-        <img class="popup-icon" src="icons/ikonamail.png" alt="e-mail icon" />
-        <a>natalier.no@gmail.com</a>
+      <h1>Mer kommer snart!</h1>
+    </main>
+    <footer>
+      <div class="relative-footer">
+        <div class="social-hub">
+          <div class="social-box">
+            <img
+              class="social-icon"
+              src="icons/Projekt bez nazwy (2).png"
+              alt="phone number icon"
+            />
+            <a href="tel:+4792552906" class="social-info" target="_blank">92 55 29 06</a>
+          </div>
+          <div class="social-box">
+            <img
+              class="social-icon"
+              src="icons/ikona insta.png"
+              alt="phone number icon"
+            />
+            <a href="https://www.instagram.com/natelier.no/" class="social-info" target="_blank">@natalier.no</a>
+          </div>
+          <div class="social-box">
+            <img
+              class="social-icon"
+              src="icons/ikonamail.png"
+              alt="e-mail adress icon"
+            />
+            <a href="mailto:natalier.no@gmail.com" class="social-info" target="_blank">natalier.no@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- POP UP -->
+    <div class="contact-popup" id="contact-popup">
+      <div class="overlay"></div>
+      <div class="popup-info">
+        <div class="close-popup-button" onclick="togglePopup()">&times;</div>
+          <h2>Kontakt</h2>
+          <div class="popup-box">
+            <img
+              class="popup-icon"
+              src="icons/Projekt bez nazwy (2).png"
+              alt="telephone icon"
+            />
+            <a href="tel:+4792552906" target="_blank">92 55 29 06</a>
+          </div>
+          <div class="popup-box">
+            <img class="popup-icon" src="icons/bookinikona.png" alt="booking icon" />
+            <a href="http://bestill.timma.no/natelier" target="_blank">Bestill time</a>
+          </div>
+          <div class="popup-box">
+          <img
+              class="popup-icon"
+              src="icons/ikona insta.png"
+              alt="instagram icon"
+            />
+          <a href="https://www.instagram.com/natelier.no/" target="_blank">@natalier.no</a>
+        </div>
+        <div class="popup-box">
+          <img class="popup-icon" src="icons/ikonamail.png" alt="e-mail icon"/>
+          <a href="mailto:natalier.no@gmail.com" target="_blank">natalier.no@gmail.com</a>
+        </div>
       </div>
     </div>
   </div>
