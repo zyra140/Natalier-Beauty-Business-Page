@@ -13,11 +13,13 @@ body {
 }
 
 .menu-tab {
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   background-color: #ffffff36;
-  gap: 100px;
   box-shadow: 40px 0 100px rgb(0, 0, 0), -40px 0 100px rgb(66, 66, 66);
 }
 
@@ -27,13 +29,13 @@ body {
   justify-content: center;
   align-items: center;
   gap: 40px;
-  margin-top: 100px;
+  margin-top: 30px;
   max-width: 700px;
 }
 
 .logo-natalier {
-  max-height: 550px;
-  max-width: 550px;
+  max-width: 30%;
+  height: auto;
 }
 
 h1 {
@@ -148,8 +150,8 @@ h1 {
 }
 
 .social-icon {
-  height: 70px;
-  width: 70px;
+  height: auto;
+  max-width: 70px;
 }
 
 .social-info {
