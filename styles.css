@@ -31,16 +31,26 @@ body {
   gap: 40px;
   margin-top: 30px;
   max-width: 700px;
+  @media (width <= 84em) {
+    margin-top: -40px;
+  }
 }
 
 .logo-natalier {
-  max-width: 30%;
+  min-width: 200px;
+  max-width: 600px;
   height: auto;
 }
 
 h1 {
   text-align: center;
   margin-top: 50px;
+  font-size: 2rem;
+  @media (width <= 60em) {
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 15px;
+  }
 }
 
 .contact-button {
@@ -189,11 +199,15 @@ h1 {
   font-weight: 600;
   transform: translate(-50%, -50%) scale(0);
   background-color: #c2b19c;
-  width: 380px;
+  max-width: 380px;
   z-index: 2;
   border-radius: 10px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding: 20px 30px;
+  @media (width <= 84em) {
+    font-size: 12px;
+    padding: 0;
+  }
 }
 
 .contact-popup.active .popup-info {
@@ -227,6 +241,10 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  @media (width <= 84em) {
+    margin: 0;
+    margin-right: 10px;
+  }
 }
 
 .popup-box a {
@@ -240,10 +258,17 @@ h1 {
   border-bottom-right-radius: 50px;
   width: 200px;
   text-align: center;
+  @media (width <= 84em) {
+    width: 150px;
+  }
 }
 
 .popup-icon {
   height: 75px;
   width: 75px;
   z-index: 2;
+  @media (width <= 84em) {
+    height: 70px;
+    width: 70px;
+  }
 }
