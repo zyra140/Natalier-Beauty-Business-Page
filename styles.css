@@ -87,6 +87,19 @@ h1 {
   cursor: pointer;
 }
 
+.adress {
+  text-decoration: none;
+  color: #c2b19c;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 15px;
+  border: solid;
+  border-radius: 2500px;
+  padding: 0.5em 1em;
+  border-color: #271a0a;
+  background-color: #271a0a;
+}
+
 .categories-menu {
   display: flex;
   flex-wrap: wrap;
