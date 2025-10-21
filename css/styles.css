@@ -6,7 +6,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #e7eeea;
   height: 9.6rem;
   padding: 0 4.8rem;
 }
@@ -30,7 +29,7 @@
 .main-nav-link:visited {
   display: inline-block;
   text-decoration: none;
-  color: #333;
+  color: #ff0000;
   font-weight: 500;
   font-size: 1.8rem;
   transition: all 0.3s;
@@ -79,29 +78,24 @@
 /* NATELIER SECTION*/
 /* ******************************** */
 
-.section-natelier {
-  background-color: #e7eeea;
-  padding: 4.8rem 0 9.6rem 0;
+.background-image {
+  background-image: url(../images/feet.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
-.natelier {
+.section-natelier {
+  color: white;
   max-width: 130rem;
   margin: 0 auto;
-  padding: 0 3.2rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 9.6rem;
-  align-items: center;
+  padding: 12.8rem 3.2rem 3.2rem 0;
 }
 
 .natelier-description {
   font-size: 2rem;
   line-height: 1.6;
   margin-bottom: 4.8rem;
-}
-
-.natelier-img {
-  width: 100%;
 }
 
 /* ******************************** */
