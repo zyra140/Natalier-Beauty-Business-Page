@@ -4,14 +4,20 @@
 
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   height: 9.6rem;
   padding: 0 4.8rem;
 }
 
 .logo {
-  height: 9.6rem;
+  height: 20rem;
+  position: relative;
+  left: 3rem;
+}
+
+.logo-container {
+  position: absolute;
 }
 
 /* ******************************** */
@@ -29,7 +35,7 @@
 .main-nav-link:visited {
   display: inline-block;
   text-decoration: none;
-  color: #ff0000;
+  color: #ffffff;
   font-weight: 500;
   font-size: 1.8rem;
   transition: all 0.3s;
@@ -88,7 +94,7 @@
 .section-natelier {
   color: white;
   max-width: 130rem;
-  margin: 0 auto;
+  margin: 24rem auto;
   padding: 12.8rem 3.2rem 3.2rem 0;
 }
 
@@ -104,13 +110,6 @@
 
 .section-how {
   padding: 9.6rem 0;
-}
-
-.step-number {
-  font-size: 8.6rem;
-  font-weight: 600;
-  color: #bbb;
-  margin-bottom: 1.2rem;
 }
 
 .step-description {
