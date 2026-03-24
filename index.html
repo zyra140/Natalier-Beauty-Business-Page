@@ -31,52 +31,75 @@
       <header class="header">
         <nav class="main-nav">
           <ul class="main-nav-list">
-            <li><a class="main-nav-link" href="#">HJEM</a></li>
+            <li><a class="main-nav-link" href="index.html">HJEM</a></li>
             <li><a class="main-nav-link" href="#">BEHANDLINGER</a></li>
-            <li><a class="main-nav-link" href="#">KONTAKT</a></li>
-            <li><a class="main-nav-link" href="#">OM OSS</a></li>
-            <li><a class="main-nav-link nav-cta" href="#">BOOK</a></li>
+            <li><a class="main-nav-link" href="cennik.html">PRISLISTE</a></li>
+            <li><a class="main-nav-link" href="aboutUs.html">OM OSS</a></li>
+            <li><a class="main-nav-link" href="kontakt.html">KONTAKT</a></li>
+            <li><a class="main-nav-link nav-cta" id="pop-up-button-open" href="#">BOOK</a></li>
           </ul>
         </nav>
       </header>
       <section class="section-natelier">
         <div class="natelier-text-box">
           <h1 class="heading-on-background">
-              Velkommen til Natelier Beauty
+              Natelier.no – Din Pålitelige Skjønnhetssalong i Oslo
           </h1>
           <p class="natelier-description">
-              Ditt sted for eleganse og velvære i hjertet av Oslo. 
+              Klar for å unne deg selv litt velvære? Bestill din time nå og opplev Majorstuens beste
+              skjønnhetspleie.
           </p>
-          <a href="#" class="btn btn--full margin-right-sm"
+          <a href="#" class="btn btn--full margin-right-sm" id="pop-up-button-open2"
               >Bestill din time nå</a
             >
-          <a href="#" class="btn btn--outline">Kontakt &rarr;</a>
+          <a href="kontakt.html" class="btn btn--outline">Kontakt &rarr;</a>
         </div>
       </section>
     </div>
+
+    <!-- Cancellation note POP UP -->
+    <div class="pop-up" id="pop-up">
+      <div class="pop-up-header">
+        <h2 class="pop-up-h2">Avbestillingsregler:</h2>
+        <button class="x-button" id="pop-up-button-ok">&times;</button>
+      </div>
+      <div class="pop-up-body"> 
+        <p class="pop-up-text">
+            Du kan avbestille inntil 24 timer før avtalen uten kostnad. Ved uteblivelse eller sen avbestilling
+            (mindre enn 24 timers varsel) belastes 50 % av prisen for den bestilte behandlingen. Avtaler
+            som ikke blir avbestilt (no show) vil bli belastet med 100 % av prisen.
+        </p>
+      </div>
+      <div class="pop-up-ok">
+        <a class="pop-up-button" href="https://timma.no/salong/natelier" id="pop-up-button-ok" target="_blank">
+          OK
+        </a>
+      </div>
+    </div>
+    <div id="overlay"></div>
 
 
     <main>
       <section class="section-how">
         <div class="container">
-          <h2 class="heading-secondary">Klar for å unne deg selv litt velvære?</h2>
+          <span class="subheading">BEHANDLINGER</span>
+          <div>
+            <h2 class="heading-secondary">Vipper</h2>
+            <p class="step-description">Vi spesialiserer oss på premium vippeextensions tilpasset din øyeform og dine preferanser. Alle
+              behandlinger utføres med høykvalitets, hypoallergiske produkter.</p>
+          </div>
         </div>
         <div class="container grid grid--2-cols grid--center-v">
           <!-- STEP 01 -->
           <div class="step-text-box">
             <h3 class="heading-tertiary">
-              Vipper
+              Klassiske vipper
             </h3>
             <p class="step-description">
-              Vi spesialiserer oss på premium vippeextensions tilpasset din øyeform og dine preferanser. 
-              Alle behandlinger utføres med høykvalitets, hypoallergiske produkter.
+              Én forlengelse påføres hver naturlige vippe for et mykt, naturlig
+              utseende. Perfekt til hverdags og for kunder som foretrekker subtil eleganse eller en ”maskara-
+              effekt”.
             </p>
-            <ul class="step-description-list">
-              <li><a class="main-nav-list" href="#">Klassiske vipper (Single Lashes)</a></li>
-              <li><a class="main-nav-list" href="#">Naturlig Volum</a></li>
-              <li><a class="main-nav-list" href="#">Ekstra Volum</a></li>
-              <li><a class="main-nav-list" href="#">Spesielle vippe-stiler:</a></li>
-            </ul>
           </div>
           <div class="step-img-box">
             <img src="images/lash1.png" class="step-img" alt="" />
@@ -87,73 +110,136 @@
           </div>
           <div class="step-text-box">
             <h3 class="heading-tertiary">
-              Negler
+              Naturlig Volum
             </h3>
             <p class="step-description">
-              Formstøpte, slitesterke negleforlengelser laget med profesjonell 
-              gelé. Du kan velge bare geléfarge med fransk / ombre, eller en 
-              fargerik shellac-finish på toppen.
+              Lettere vifte (2–5 vipper per naturlig vippe) gir moderat volum
+              samtidig som de ser lette og luftige ut.
             </p>
           </div>
           <!-- STEP 03 -->
           <div class="step-text-box">
             <h3 class="heading-tertiary">
-              Fotbehandling
+              Ekstra Volum
             </h3>
             <p class="step-description">
-              Shellac (eller gellakk) er en spesiell hybrid neglelakk utviklet av CND (Creative Nail Design).
-              Den kombinerer egenskapene til vanlig neglelakk og gelélakk. Shellac påføres som vanlig lakk,
-              men herdes under UV- eller LED-lampe, noe som gjør den mer slitesterk og motstandsdyktig
-              mot avskalling.
+              Tettere vifter (5–7+ vipper) for maks volum og mer dramatisk effekt.
             </p>
           </div>
           <div class="step-img-box">
             <img src="images/shellack.jpg" class="step-img" alt="" />
           </div>
           <!-- STEP 04 -->
-          <div class="step-img-box">
-            <img src="images/placeholder.png" class="step-img" alt="" />
-          </div>
           <div class="step-text-box">
-            <h3 class="heading-tertiary">
-              Bryn
-            </h3>
-            <p class="step-description">
-              En tradisjonell manikyr med fokus på stell av negler og neglebånd, som kan avsluttes med
-              vanlig neglelakk i ønsket farge. I motsetning til gelé eller shellac, herdes ikke vanlig neglelakk
-              under lampe og kan enkelt fjernes hjemme med neglelakkfjerner. Perfekt for deg som liker å
-              bytte farge oftere, foretrekker et naturlig og lett uttrykk, og ikke vil forplikte deg til regelmessige
-              avtaler.
-            </p>
+            <ul>
+              <li>
+                <p>Wispy / Kim Kardashian</p>
+                <img src="images/20210509_202908.jpg" class="step-img" alt="">
+              </li>
+              <li>
+                <p>Wet Look Lashes</p>
+                <img src="images/20210509_202908.jpg" class="step-img" alt="">
+              </li>
+              <li>
+                <p>L-Curl Lashes</p>
+                <img src="images/20210509_202908.jpg" class="step-img" alt="">
+              </li>
+            </ul>
           </div>
+          <h3 class="heading-tertiary">
+            Avantgardiske vipper
+          </h3>
           <!-- STEP 05 -->
           <div class="step-text-box">
             <h3 class="heading-tertiary">
-              Vippeløft
+              Brune vipper
             </h3>
             <p class="step-description">
-              Shellac pedikyr Enkel pedikyr med filing av tånegler og profesjonell shellac-applikasjon –
-              perfekt for en rask oppfriskning. Inkluderer ikke fotbad eller fjerning av hard hud.
+              Mer naturlig look, supertrendy for tiden, spesielt flatterende på blå eller
+              grønne øyne!
               <br>
-              Spa Fotpleie Pedikyr (med Pododisc) En medisinsk pedikyr som starter med et varmt
-              fotbad, etterfulgt av Pododisc-systemet – en innovativ elektrisk fil med engangsdiscer som
-              skånsomt og grundig eksfolierer hard hud, spesielt på hæler og fotsåler.
+              Tips: Husk å rengjøre vippene med en spesialshampo for å unngå bakterielle infeksjoner.
+              Kommer du med rene vipper, bruker vi mindre tid på rengjøring – noe som betyr mer tid til å
+              sette på vipper. Rene vipper = bedre holdbarhet!
             </p>
           </div>
           <div class="step-img-box">
             <img src="images/feet.png" class="step-img" alt="" />
           </div>
+            <h2 class="heading-secondary">Negler</h2>
+            <p class="step-description">Vi er sertifiserte negleteknikere med lang erfaring. Hos oss står kvalitet, presisjon og lidenskap
+            for negler i fokus.</p>
           <!-- STEP 06 -->
           <div class="step-img-box">
             <img src="images/forming.png" class="step-img" alt="" />
           </div>
           <div class="step-text-box">
             <h3 class="heading-tertiary">
-              Permanent Make Up ( PMU )
+              Gel manikyr
             </h3>
             <p class="step-description">
-              Med pinsett eller voks formes brynene for å fremheve 
-              ansiktets naturlige struktur.
+              Formstøpte, slitesterke negleforlengelser laget med profesjonell gelé. Du kan velge bare
+              geléfarge med fransk / ombre, eller en fargerik shellac-finish på toppen.
+            </p>
+          </div>
+          <!-- STEP 07 -->
+          <div class="step-text-box">
+            <h3 class="heading-tertiary">
+              Brynfarging
+            </h3>
+            <p class="step-description">
+              Gir mer definisjon og farge til lyse eller tynne bryn. 
+              Henna farger også huden lettfor en fyldigere effekt 
+              som varer opptil 7 dager på huden og 4–6 uker på hårene.
+            </p>
+          </div>
+          <div class="step-img-box">
+            <img src="images/Farging og forming av bryn .png" class="step-img" alt="" />
+          </div>
+          <!-- STEP 08 -->
+          <div class="step-img-box">
+            <img src="images/Brynslaminering.png" class="step-img" alt="" />
+          </div>
+          <div class="step-text-box">
+            <h3 class="heading-tertiary">
+              Brynlaminering (Brynsløft)
+            </h3>
+            <p class="step-description">
+              En transformasjon som retter ut og setter brynshårene i en
+              fyldigere, oppbørstet form. Perfekt for å temme uregjerlige hår eller skape illusjonen av
+              tykkere bryn uten sminke. Resultatet varer i 4–6 uker. Etterbehandling: bruk
+              fuktighetsgivende serum anbefalt av terapeuten.
+            </p>
+          </div>
+          <!-- STEP 09 -->
+          <div class="step-text-box">
+            <h3 class="heading-tertiary">
+              Vippeløft
+            </h3>
+            <p class="step-description">
+              Vippeløft er en naturlig måte å fremheve dine egne vipper uten extensions. Behandlingen løfter
+              og bøyer vippene fra roten, slik at de ser lengre, mørkere og mer definerte ut. Vi kombinerer ofte
+              med farging for maksimal effekt. Resultatet varer 6–8 uker. Etterbehandling: bruk
+              fuktighetsgivende serum anbefalt av terapeuten.
+            </p>
+          </div>
+          <div class="step-img-box">
+            <img src="images/lift1.JPEG" class="step-img" alt="" />
+          </div>
+                    <!-- STEP 10 -->
+          <div class="step-img-box">
+            <img src="images/pernament.png" class="step-img" alt="" />
+          </div>
+          <div class="step-text-box">
+            <h3 class="heading-tertiary">
+              PMU (permanent makeup)
+            </h3>
+            <p class="step-description">
+              Powder Brows (PMU) er en semi-permanent make-up-teknikk som skaper myke, skyggelagte
+              bryn med en puddereffekt – lik sminkede bryn. Pigmentet påføres med maskin, og bygger
+              gradvis opp farge og definisjon for et naturlig men forbedret resultat. Powder brows kan
+              tilpasses i intensitet, og passer både til et subtilt hverdagsuttrykk og en mer markert look.
+              Resultatet varer vanligvis 1,5–3 år, med påfyll anbefalt for å bevare perfekt form og farge.
             </p>
           </div>
         </div>
@@ -199,12 +285,11 @@
     <section class="section-map">
       <div class="container grid grid--2-cols map-box">
         <div class="section-map-text">
-          <h2 class="heading-secondary map-heading">Hvor vi holder til</h2>
-          <p class="map-description">Første dør fra krysset.
-Ring "NATELIER" på dørklokken vi er i første etasje.</p>
+          <h2 class="heading-secondary map-heading">Our Location</h2>
+          <p class="map-description">dsada dsadsa dsad hkjbxzk hdkjashjlk b kksad ada dsadsa dsad hkjbxzk hdkjashjlk b kksadada dsadsa dsad hkjbxzk hdkjashjlk b kksadada dsadsa dsad hkjbxzk hdkjashjlk b kksadada dsadsa dsad hkjbxzk hdkjashjlk b kksadada dsadsa dsad hkjbxzk hdkjashjlk b kksadada dsadsa dsad hkjbxzk hdkjashjlk b kksad</p>
         </div>
         <div>
-          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d153.76305849796066!2d10.71881513479321!3d59.925373524679806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTnCsDU1JzMxLjMiTiAxMMKwNDMnMDguMCJF!5e1!3m2!1spl!2spl!4v1771157777261!5m2!1spl!2spl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d74244.11925329996!2d18.478112616447007!3d54.443014519327065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd0a914c1c265f%3A0xf7d319336f7a95fa!2sSopot%2C%20Polska!5e0!3m2!1spl!2seg!4v1753966455025!5m2!1spl!2seg" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </section>
