@@ -11,7 +11,7 @@
 }
 
 .logo {
-  height: 20rem;
+  height: 30rem;
   position: relative;
   left: 3rem;
 }
@@ -71,7 +71,7 @@
   height: 8rem;
   padding-top: 0;
   padding-bottom: 0;
-  background-color: rgba(255, 255, 255, 0.801);
+  background-color: rgba(199, 199, 199, 0.767);
   z-index: 999;
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
 }
@@ -85,7 +85,7 @@
 /* ******************************** */
 
 .background-image {
-  background-image: url(../images/feet.png);
+  background-image: url(../images/bck.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -99,7 +99,7 @@
 }
 
 .natelier-description {
-  font-size: 2rem;
+  font-size: 3rem;
   line-height: 1.6;
   margin-bottom: 4.8rem;
 }
@@ -117,6 +117,7 @@
 
 .section-how {
   padding: 9.6rem 0;
+  background-color: #white;
 }
 
 .step-description {
@@ -221,7 +222,7 @@
 /* ******************************** */
 
 .section-map {
-  background-color: black;
+  background-color: #767676;
   padding: 4.8rem;
 }
 
