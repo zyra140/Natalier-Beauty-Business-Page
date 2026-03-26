@@ -30,6 +30,19 @@ if (document.querySelector(".section-natelier")) {
   obs.observe(sectionHeroEl);
 }
 
+//EXPENDABLE BEHANDLINGER
+
+document.body.addEventListener("click", (ev) => {
+  const isExpendableTitle = !!ev.target.closest(".expendable-title-bar");
+  const expendable = ev.target.closest(".expendable");
+
+  if (!isExpendableTitle) {
+    return;
+  }
+
+  expendable.classList.toggle("expendable-open");
+});
+
 // POP UP
 const openBtn = document.getElementById("pop-up-button-open");
 const openBtn2 = document.getElementById("pop-up-button-open2");
