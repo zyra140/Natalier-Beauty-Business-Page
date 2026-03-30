@@ -72,6 +72,10 @@ body {
   margin: 0 auto;
 }
 
+.container-3-rows {
+  margin: 10rem auto;
+}
+
 .grid {
   display: grid;
   column-gap: 6.4rem;
