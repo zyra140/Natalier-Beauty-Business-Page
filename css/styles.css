@@ -91,6 +91,8 @@
 
 /* Navigation for mobile devices */
 @media screen and (max-width: 1118px) {
+
+  
   .nav__menu {
     position: absolute;
     left: 0;
@@ -207,9 +209,18 @@
   background-color: var(--black-color-lighten);
 }
 
+.section-natelier {
+  color: white;
+  max-width: 130rem;
+  margin: 24rem auto;
+  margin-top: var(--header-height);
+  padding: 12.8rem 3.2rem 3.2rem 0;
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 340px) {
+
   .nav-container {
     margin-inline: 1rem;
   }
@@ -221,12 +232,17 @@
 
 /* For large devices */
 @media screen and (min-width: 1118px) {
+
+  .section-natelier {
+  margin-top: calc(var(--header-height) + 1rem);
+}
+
   .nav-container {
     margin-inline: auto;
   }
 
   .nav {
-    height: calc(var(--header-height) + 2rem);
+    height: calc(var(--header-height) + 1rem);
     display: flex;
     justify-content: space-between;
   }
@@ -354,7 +370,7 @@
 /* STICKY NAVIGATION*/
 /* ******************************** */
 
-.sticky .header {
+/* .sticky .header {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -362,14 +378,14 @@
   height: 8rem;
   padding-top: 0;
   padding-bottom: 0;
-  background-color: rgba(82, 81, 81, 0.438);
+  background-color: rgba(146, 11, 11, 0.438);
   z-index: 999;
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
 }
 
 .sticky .section-natelier {
   margin-top: 9.6rem;
-}
+} */
 
 /* ******************************** */
 /*  POP UP*/
@@ -474,14 +490,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
-}
-
-.section-natelier {
-  color: white;
-  max-width: 130rem;
-  margin: 24rem auto;
-  margin-top: calc(var(--header-height) + 2rem);
-  padding: 12.8rem 3.2rem 3.2rem 0;
 }
 
 .natelier-description {
