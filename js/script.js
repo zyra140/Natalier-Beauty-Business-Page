@@ -30,18 +30,21 @@ if (document.querySelector(".section-natelier")) {
   obs.observe(sectionHeroEl);
 }
 
-//EXPENDABLE BEHANDLINGER
+/*=============== SHOW MENU ===============*/
+const showMenu = (toggleId, navId) => {
+  const toggle = document.getElementById(toggleId),
+    nav = document.getElementById(navId);
 
-document.body.addEventListener("click", (ev) => {
-  const isExpendableTitle = !!ev.target.closest(".expendable-title-bar");
-  const expendable = ev.target.closest(".expendable");
+  toggle.addEventListener("click", () => {
+    // Add show-menu class to nav menu
+    nav.classList.toggle("show-menu");
 
-  if (!isExpendableTitle) {
-    return;
-  }
+    // Add show-icon to show and hide the menu icon
+    toggle.classList.toggle("show-icon");
+  });
+};
 
-  expendable.classList.toggle("expendable-open");
-});
+showMenu("nav-toggle", "nav-menu");
 
 // POP UP
 const openBtn = document.getElementById("pop-up-button-open");

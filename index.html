@@ -17,48 +17,97 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/styles.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     
     <script defer src="js/script.js"></script>
 
     <title>Natelier &mdash; Din Pålitelige Skjønnhetssalong i Oslo</title>
   </head>
   <body>
+
+<!--=============== HEADER ===============-->
+      <header class="header">
+        <nav class="nav nav-container">
+          <div class="nav__data">
+            <a href="#" class="nav__logo">
+              <i class="ri-planet-line"></i> Company
+            </a>
+               
+            <div class="nav__toggle" id="nav-toggle">
+              <i class="ri-menu-line nav__burger"></i>
+              <i class="ri-close-line nav__close"></i>
+            </div>
+          </div>
+
+<!--=============== NAV MENU ===============-->
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <li><a href="#" class="nav__link">Hjem</a></li>
+               
+<!--=============== DROPDOWN 1 ===============-->
+              <li class="dropdown__item">
+                <div class="nav__link">
+                  Behandlinger <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                </div>
+
+                <ul class="dropdown__menu">
+                  <li>
+                    <a href="#" class="dropdown__link">
+                      <i class="ri-pie-chart-line"></i> Vipper
+                    </a>                          
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown__link">
+                      <i class="ri-arrow-up-down-line"></i> Negler
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown__link">
+                      <i class="ri-arrow-up-down-line"></i> Fotbehandling
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown__link">
+                      <i class="ri-arrow-up-down-line"></i> Vippeloft
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown__link">
+                      <i class="ri-arrow-up-down-line"></i> PMU
+                    </a>
+                  </li>
+                        
+                </ul>
+              </li>
+
+              <li><a href="#" class="nav__link">Prisliste</a></li>
+                  
+              <li><a href="#" class="nav__link">Om Oss</a></li>
+
+              <li><a href="#" class="nav__link">Kontakt</a></li>
+
+              <li>
+                <a class="nav__link" id="pop-up-button-open" href="#">BOOK</a>
+              </li>
+
+            </ul>
+          </div>
+        </nav>
+      </header>
     <!-- BACKGROUND IMAGE PART -->
     <div class="background-image">
       <div class="logo-container">
         <img class="logo" src="images/logo.png" alt="Natelier logo" />
       </div>
-      <header class="header">
-        <nav class="main-nav">
-          <ul class="main-nav-list">
-            <li><a class="main-nav-link" href="index.html">HJEM</a></li>
-            <!-- EXPENDABLE BEHANDLINGER -->
-            <li>
-              <div class="expendable">
-                <div class="expendable-title-bar">
-                  <span class="expendable-title main-nav-link">BEHANDLINGER</span>
-                </div>
-                <div class="expendable-content-wrapper">
-                  <div class="expendable-content">
-                    <ul class="expend-nav-list">
-                      <li><a class="main-nav-link" href="#">VIPPER</a></li>
-                      <li><a class="main-nav-link" href="#">NEGLER</a></li>
-                      <li><a class="main-nav-link" href="#">FOTBEHANDLING</a></li>
-                      <li><a class="main-nav-link" href="#">VIPPELOFT</a></li>
-                      <li><a class="main-nav-link" href="#">PMU</a></li>
-                    </ul>  
-                  </div>
-                </div>
-              </div>
-            </li>
-            <!--  -->
-            <li><a class="main-nav-link" href="cennik.html">PRISLISTE</a></li>
-            <li><a class="main-nav-link" href="aboutUs.html">OM OSS</a></li>
-            <li><a class="main-nav-link" href="kontakt.html">KONTAKT</a></li>
-            <li><a class="main-nav-link nav-cta" id="pop-up-button-open" href="#">BOOK</a></li>
-          </ul>
-        </nav>
-      </header>
+      
       <section class="section-natelier">
         <div class="natelier-text-box">
           <h1 class="heading-on-background">
