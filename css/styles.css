@@ -480,6 +480,7 @@
   color: white;
   max-width: 130rem;
   margin: 24rem auto;
+  margin-top: calc(var(--header-height) + 2rem);
   padding: 12.8rem 3.2rem 3.2rem 0;
 }
 
