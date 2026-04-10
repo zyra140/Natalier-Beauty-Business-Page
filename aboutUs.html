@@ -24,6 +24,11 @@
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/styles.css" />
 
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
     <script defer src="js/script.js"></script>
 
     <title>Natelier &mdash; Din Pålitelige Skjønnhetssalong i Oslo</title>
@@ -33,25 +38,82 @@
     <img class="logo" src="images/logo.png" alt="Natelier logo" />
   </div>
   <body>
-    <header class="header">
-      <nav class="main-nav">
-        <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="index.html">HJEM</a></li>
-          <li><a class="main-nav-link" href="#">BEHANDLINGER</a></li>
-          <li><a class="main-nav-link" href="cennik.html">PRISLISTE</a></li>
-          <li><a class="main-nav-link" href="aboutUs.html">OM OSS</a></li>
-          <li><a class="main-nav-link" href="kontakt.html">KONTAKT</a></li>
-          <li>
-            <a class="main-nav-link nav-cta" id="pop-up-button-open" href="#"
-              >BOOK</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <!--=============== HEADER ===============-->
+      <header class="header">
+        <nav class="nav nav-container">
+          <div class="nav__data">
+            <a href="#" class="nav__logo">
+              <i class="ri-diamond-line"></i> Natelier Beauty
+            </a>
+               
+            <div class="nav__toggle" id="nav-toggle">
+              <i class="ri-menu-line nav__burger"></i>
+              <i class="ri-close-line nav__close"></i>
+            </div>
+          </div>
+
+<!--=============== NAV MENU ===============-->
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <li><a href="index.html" class="nav__link">Hjem</a></li>
+               
+<!--=============== DROPDOWN 1 ===============-->
+              <li class="dropdown__item">
+                <div class="nav__link">
+                  Behandlinger <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                </div>
+
+                <ul class="dropdown__menu">
+                  <li>
+                    <a href="#" class="dropdown__link">
+                      <i class="ri-arrow-right-up-line"></i> Vipper
+                    </a>                          
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown__link">
+                      <i class="ri-arrow-right-up-line"></i> Negler
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown__link">
+                      <i class="ri-arrow-right-up-line"></i> Fotbehandling
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown__link">
+                      <i class="ri-arrow-right-up-line"></i> Vippeloft
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown__link">
+                      <i class="ri-arrow-right-up-line"></i> PMU
+                    </a>
+                  </li>
+                        
+                </ul>
+              </li>
+
+              <li><a href="cennik.html" class="nav__link">Prisliste</a></li>
+                  
+              <li><a href="aboutUs.html" class="nav__link">Om Oss</a></li>
+
+              <li><a href="kontakt.html" class="nav__link">Kontakt</a></li>
+
+              <li class="btn-book">
+                <a class="nav__link" id="pop-up-button-open" href="#">BOOK</a>
+              </li>
+
+            </ul>
+          </div>
+        </nav>
+      </header>
     </div>
 
-    <div class="container grid grid--2-cols">
+    <div class="container grid-small-gaps grid--2-cols">
       <div>
       <h1 class="heading-on-background">OM OSS</h1>
       <p class="step-description about-us-text">

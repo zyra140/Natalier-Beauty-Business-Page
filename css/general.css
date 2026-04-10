@@ -91,6 +91,7 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
+  margin-top: var(--header-height);;
 }
 
 ul {
@@ -130,6 +131,12 @@ a {
   row-gap: 9.6rem;
 }
 
+.grid-small-gaps {
+  display: grid;
+  column-gap: 0rem;
+  row-gap: 0rem;
+}
+
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -155,6 +162,7 @@ a {
   letter-spacing: -0.5px;
   font-size: 7.4rem;
   line-height: 1.05;
+  margin-top: 7rem;
   margin-bottom: 3.2rem;
   font-family: "Playfair Display", serif;
 }

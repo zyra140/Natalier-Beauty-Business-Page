@@ -213,7 +213,7 @@
   color: white;
   max-width: 130rem;
   margin: 24rem auto;
-  margin-top: var(--header-height);
+  margin-top: 0;
   padding: 12.8rem 3.2rem 3.2rem 0;
 }
 
@@ -234,7 +234,7 @@
 @media screen and (min-width: 1118px) {
 
   .section-natelier {
-  margin-top: calc(var(--header-height) + 1rem);
+  margin-top: 0;
 }
 
   .nav-container {
