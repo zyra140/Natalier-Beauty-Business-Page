@@ -171,6 +171,7 @@ a {
 
 .grid--center-v {
   align-items: center;
+  margin-bottom: 12rem;
 }
 
 .heading-on-background {
@@ -212,7 +213,7 @@ a {
 
 .subheading {
   display: block;
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   font-weight: 500;
   color: #114825;
   text-transform: uppercase;
