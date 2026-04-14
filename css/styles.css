@@ -528,11 +528,34 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .step-img {
   width: 80%;
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  transition: filter 0.3s;
+}
+
+.step-img:hover {
+  filter: blur(5px);
+}
+
+.step-img:hover ~ .btn-overlay {
+  opacity: 1;
+}
+
+.btn-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.step-img-box:hover .btn-overlay {
+  opacity: 1;
 }
 
 /* ******************************** */
@@ -800,4 +823,20 @@
   text-decoration: none;
   cursor: pointer;
   color: #555;
+}
+
+.btn-view-more {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #dab0d7;
+  color: #0f3f20;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+
+.btn-view-more:hover {
+  background-color: #c5a0c8;
+
 }
