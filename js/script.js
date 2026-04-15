@@ -11,7 +11,6 @@ if (document.querySelector(".section-natelier")) {
   const obs = new IntersectionObserver(
     function (entries) {
       const ent = entries[0];
-      console.log(ent);
 
       if (ent.isIntersecting === false) {
         document.body.classList.add("sticky");
