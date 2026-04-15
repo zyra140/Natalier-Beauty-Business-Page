@@ -201,24 +201,22 @@
   background-color: var(--black-color);
 }
 
-.dropdown__menu,
-.dropdown__submenu {
+.dropdown__menu {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease-out;
 }
 
-/* Show dropdown menu & submenu */
-.dropdown__item:hover .dropdown__menu,
-  .dropdown__subitem:hover > .dropdown__submenu {
-    max-height: 1000px;
-    transition: max-height 0.4s ease-in;
-  }
+/* Show dropdown menu */
+.dropdown__item:hover .dropdown__menu {
+  max-height: 1000px;
+  transition: max-height 0.4s ease-in;
+}
 
-  /* Rotate dropdown icon */
-  .dropdown__item:hover .dropdown__arrow {
-    transform: rotate(180deg);
-  }
+/* Rotate dropdown icon */
+.dropdown__item:hover .dropdown__arrow {
+  transform: rotate(180deg);
+}
 
 .section-natelier {
   color: white;
@@ -275,13 +273,11 @@
     background-color: transparent;
   }
 
-  .dropdown__item,
-  .dropdown__subitem {
+  .dropdown__item {
     position: relative;
   }
 
-  .dropdown__menu,
-  .dropdown__submenu {
+  .dropdown__menu {
     max-height: initial;
     overflow: initial;
     position: absolute;
@@ -299,16 +295,6 @@
     padding-inline: 1rem 3.5rem;
   }
 
-  .dropdown__subitem .dropdown__link {
-    padding-inline: 1rem;
-  }
-
-  .dropdown__submenu {
-    position: absolute;
-    left: 100%;
-    top: 0.5rem;
-  }
-
   /* Show dropdown menu */
   .dropdown__item:hover .dropdown__menu {
     opacity: 1;
@@ -317,10 +303,10 @@
     transition: top 0.3s;
   }
 
-  /* Show dropdown submenu */
-  .dropdown__subitem:hover > .dropdown__submenu {
+  /* Show dropdown menu */
+  .dropdown__item:hover .dropdown__menu {
     opacity: 1;
-    top: 0;
+    top: 5.5rem;
     pointer-events: initial;
     transition: top 0.3s;
   }
@@ -376,27 +362,6 @@
 .expend-nav-list {
   list-style: none;
 }
-
-/* ******************************** */
-/* STICKY NAVIGATION*/
-/* ******************************** */
-
-/* .sticky .header {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 8rem;
-  padding-top: 0;
-  padding-bottom: 0;
-  background-color: rgba(146, 11, 11, 0.438);
-  z-index: 999;
-  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
-}
-
-.sticky .section-natelier {
-  margin-top: 9.6rem;
-} */
 
 /* ******************************** */
 /*  POP UP*/
@@ -560,13 +525,6 @@
   border: 0;
 }
 
-.step-description-list {
-  list-style: circle;
-  font-weight: 500;
-  font-size: 1.4rem;
-  column-count: 2;
-}
-
 @media screen and (max-width: 1118px) {
   .background-image {
     min-height: 70vh;
@@ -669,12 +627,6 @@
   line-height: 1.8;
 }
 
-.heading-description {
-  font-size: 1.8rem;
-  line-height: 1.8;
-  margin-bottom: 8.6rem;
-}
-
 .step-img-box {
   display: flex;
   align-items: center;
@@ -732,89 +684,6 @@
 .step-img-box:hover .btn-overlay,
 .step-img-box .btn-overlay:hover {
   opacity: 1;
-}
-
-/* ******************************** */
-/* CTA SECTION*/
-/* ******************************** */
-
-.section-cta {
-  padding: 9.6rem 0;
-}
-
-.cta {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  /* background-color: #cd9900; */
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
-  border-radius: 11px;
-
-  background-image: linear-gradient(to right bottom, #d6c5d8, #dab0d7);
-  overflow: hidden;
-}
-
-.cta-text-box {
-  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
-  color: #0f3f20;
-}
-
-.cta .heading-secondary {
-  color: #0f3f20;
-  margin-bottom: 3.2rem;
-}
-
-.cta-text {
-  font-size: 1.8rem;
-  line-height: 1.8;
-  margin-bottom: 4.8rem;
-}
-
-.cta-img-box {
-  background-image:
-    linear-gradient(
-      to right bottom,
-      hsla(300, 26%, 75%, 0.301),
-      hsla(310, 41%, 74%, 0.301)
-    ),
-    url("../images/20210509_202908.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.cta-form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 3.2rem;
-  row-gap: 2.4rem;
-}
-
-.cta-form label {
-  display: block;
-  font-size: 1.6rem;
-  font-weight: 500;
-  margin-bottom: 1.2rem;
-}
-
-.cta-form input,
-.cta-form select {
-  width: 100%;
-  padding: 1.2rem;
-  font-size: 1.8rem;
-  font-family: inherit;
-  color: inherit;
-  border: none;
-  background-color: #e7eeea;
-  border-radius: 9px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-.cta-form input::placeholder {
-  color: #aaa;
-}
-
-.cta *:focus {
-  outline: none;
-  box-shadow: 0 0 0 0.8rem rgba(236, 203, 103, 0.432);
 }
 
 /* ******************************** */
@@ -916,10 +785,6 @@
   flex-direction: column;
   gap: 2.4rem;
 
-}
-
-.adress {
-  margin-bottom: 2.4rem;
 }
 
 .footer-heading {
