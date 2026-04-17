@@ -40,82 +40,128 @@
       <img class="logo" src="images/logo.png" alt="Natelier logo" />
     </div>
 <!--=============== HEADER ===============-->
-      <header class="header">
-        <nav class="nav nav-container">
-          <div class="nav__data">
-            <a href="#" class="nav__logo">
-              <i class="ri-diamond-line"></i> Natelier Beauty
-            </a>
+       <header class="header">
+      <nav class="nav nav-container">
+        <div class="nav__data">
+          <a href="#" class="nav__logo">
+            <i class="ri-diamond-line"></i> Natelier Beauty
+          </a>
                
-            <div class="nav__toggle" id="nav-toggle">
-              <i class="ri-menu-line nav__burger"></i>
-              <i class="ri-close-line nav__close"></i>
-            </div>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line nav__burger"></i>
+            <i class="ri-close-line nav__close"></i>
           </div>
+        </div>
 
 <!--=============== NAV MENU ===============-->
-          <div class="nav__menu" id="nav-menu">
-            <ul class="nav__list">
-              <li><a href="index.html" class="nav__link">Hjem</a></li>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li><a href="index.html" class="nav__link">Hjem</a></li>
                
 <!--=============== DROPDOWN 1 ===============-->
-              <li class="dropdown__item">
-                <div class="nav__link">
-                  Behandlinger <i class="ri-arrow-down-s-line dropdown__arrow"></i>
-                </div>
+            <li class="dropdown__item">
+              <div class="nav__link">
+                Behandlinger <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
 
-                <ul class="dropdown__menu">
-                  <li>
-                    <a href="#" class="dropdown__link">
-                      <i class="ri-arrow-right-up-line"></i> Vipper
-                    </a>                          
-                  </li>
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="vippeextensions.html" class="dropdown__link">
+                    <i class="ri-arrow-right-up-line"></i> Vippeextensions
+                  </a>                          
+                </li>
 
-                  <li>
-                    <a href="#" class="dropdown__link">
-                      <i class="ri-arrow-right-up-line"></i> Negler
-                    </a>
-                  </li>
+                <li>
+                  <a href="negler.html" class="dropdown__link">
+                    <i class="ri-arrow-right-up-line"></i> Negler
+                  </a>
+                </li>
 
-                  <li>
-                    <a href="#" class="dropdown__link">
-                      <i class="ri-arrow-right-up-line"></i> Fotbehandling
-                    </a>
-                  </li>
+                <li>
+                  <a href="fotbehandling.html" class="dropdown__link">
+                    <i class="ri-arrow-right-up-line"></i> Fotbehandling
+                  </a>
+                </li>
 
-                  <li>
-                    <a href="#" class="dropdown__link">
-                      <i class="ri-arrow-right-up-line"></i> Vippeloft
-                    </a>
-                  </li>
+                <li>
+                  <a href="bryn.html" class="dropdown__link">
+                    <i class="ri-arrow-right-up-line"></i> Bryn
+                  </a>
+                </li>
 
-                  <li>
-                    <a href="#" class="dropdown__link">
-                      <i class="ri-arrow-right-up-line"></i> PMU
-                    </a>
-                  </li>
+                <li>
+                  <a href="vippeløft.html" class="dropdown__link">
+                    <i class="ri-arrow-right-up-line"></i> Vippeløft
+                  </a>
+                </li>
+
+                <li>
+                  <a href="pmu.html" class="dropdown__link">
+                    <i class="ri-arrow-right-up-line"></i> PMU
+                  </a>
+                </li>
                         
-                </ul>
-              </li>
+              </ul>
+            </li>
 
-              <li><a href="cennik.html" class="nav__link">Prisliste</a></li>
+            <li><a href="cennik.html" class="nav__link">Prisliste</a></li>
                   
-              <li><a href="aboutUs.html" class="nav__link">Om Oss</a></li>
+            <li><a href="aboutUs.html" class="nav__link">Om Oss</a></li>
 
-              <li><a href="kontakt.html" class="nav__link">Kontakt</a></li>
+            <li><a href="kontakt.html" class="nav__link">Kontakt</a></li>
 
-              <li class="btn-book">
-                <a class="nav__link" id="pop-up-button-open" href="#">BOOK</a>
-              </li>
+            <li class="btn-book">
+              <a class="nav__link" id="pop-up-button-open" href="#">BOOK</a>
+            </li>
 
-            </ul>
-          </div>
-        </nav>
-      </header>
+          </ul>
+        </div>
+      </nav>
+          <!-- Cancellation note POP UP -->
+    <div class="pop-up" id="pop-up">
+      <div class="pop-up-header">
+        <h2 class="pop-up-h2">Avbestillingsregler:</h2>
+        <button class="x-button" id="pop-up-button-ok">&times;</button>
+      </div>
+      <div class="pop-up-body"> 
+        <p class="pop-up-text">
+            Du kan avbestille inntil 24 timer før avtalen uten kostnad. Ved uteblivelse eller sen avbestilling
+            (mindre enn 24 timers varsel) belastes 50 % av prisen for den bestilte behandlingen. Avtaler
+            som ikke blir avbestilt (no show) vil bli belastet med 100 % av prisen.
+        </p>
+      </div>
+      <div class="pop-up-ok">
+        <a class="pop-up-button" href="https://timma.no/salong/natelier" id="pop-up-button-ok" target="_blank">
+          OK
+        </a>
+      </div>
+    </div>
+    <div id="overlay"></div>
+    </header>
+        <!-- Cancellation note POP UP -->
+    <div class="pop-up" id="pop-up">
+      <div class="pop-up-header">
+        <h2 class="pop-up-h2">Avbestillingsregler:</h2>
+        <button class="x-button" id="pop-up-button-ok">&times;</button>
+      </div>
+      <div class="pop-up-body"> 
+        <p class="pop-up-text">
+            Du kan avbestille inntil 24 timer før avtalen uten kostnad. Ved uteblivelse eller sen avbestilling
+            (mindre enn 24 timers varsel) belastes 50 % av prisen for den bestilte behandlingen. Avtaler
+            som ikke blir avbestilt (no show) vil bli belastet med 100 % av prisen.
+        </p>
+      </div>
+      <div class="pop-up-ok">
+        <a class="pop-up-button" href="https://timma.no/salong/natelier" id="pop-up-button-ok" target="_blank">
+          OK
+        </a>
+      </div>
+    </div>
+    <div id="overlay"></div>
       <section class="section-how">
         <h1 class="heading-on-background">Negler</h1>
         <div class="container grid grid--2-cols grid--center-v">
-
+     
           <!-- Klassiske vipper -->
          
 
