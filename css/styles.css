@@ -133,6 +133,10 @@
     background-color: var(--black-color);
     padding-top: 1rem;
   }
+
+  .section-natelier {
+    margin-left: 0
+  }
 }
 
 .nav__link {
@@ -978,4 +982,58 @@
 .btn-view-more:hover {
   background-color: #c5a0c8;
 
+}
+
+@media screen and (max-width: 1118px) {
+  .section-natelier {
+    margin-left: 0;
+    padding: 0;
+    
+  }
+
+  .background-image {
+    height: calc(100vh - var(--header-height) - 80rem);
+  }
+
+  .logo {
+  height: 12em;
+  }
+
+  .natelier-description {
+    display: none;
+  }
+
+  .heading-on-background {
+    margin-top: 0;
+    font-size: 2.9rem;
+  }
+
+  .btn {
+    margin-bottom: 1rem;
+  }
+
+  .natelier-text-box {
+    margin-bottom: 4rem;
+  }
+
+  .background-image {
+    align-items: flex-end;
+  }
+
+  .footer {
+    padding-top: 1rem;
+  }
+
+  .footer-logo-natelier {
+    margin: 0;
+    display: none;
+  }
+
+  .section-how {
+    padding-bottom: 0;
+  }
+
+  .heading-secondary {
+    font-size: 3.5rem;
+  }
 }
