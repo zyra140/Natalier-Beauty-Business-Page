@@ -1035,5 +1035,20 @@
     font-size: 2.5rem;
   }
 
-  
+  /* dropdown on mobile devices */
+  .dropdown__item:hover .dropdown__menu {
+    max-height: 0;
+  }
+
+  .dropdown__item.active .dropdown__menu {
+    max-height: 1000px;
+  }
+
+  .dropdown__item:hover .dropdown__arrow {
+    transform: rotate(0deg);
+  }
+
+  .dropdown__item.active .dropdown__arrow {
+    transform: rotate(180deg);
+  }
 }

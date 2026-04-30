@@ -66,3 +66,22 @@ closeBtn.addEventListener("click", () => {
   popUp.classList.remove("open");
   overlay.classList.remove("active");
 });
+
+// DROPDOWN ON MOBILE DEIVCES
+
+const dropdownItems = document.querySelectorAll('.dropdown__item');
+
+dropdownItems.forEach(item => {
+  item.addEventListener('click', (e) => {
+    // zapobiega przejściu w link (jeśli jest <a>)
+    e.preventDefault();
+
+    // zamyka inne (opcjonalne – UX lepszy)
+    dropdownItems.forEach(i => {
+      if (i !== item) i.classList.remove('active');
+    });
+
+    // toggle aktualnego
+    item.classList.toggle('active');
+  });
+});
