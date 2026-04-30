@@ -74,10 +74,17 @@ closeBtn.addEventListener("click", () => {
 const dropdownItems = document.querySelectorAll('.dropdown__item');
 
 dropdownItems.forEach(item => {
-  const trigger = item.querySelector('.nav__link'); // klik tylko tutaj
+  item.addEventListener('click', (e) => {
+    
+    // jeśli kliknięto w link w dropdown → NIE blokuj
+    if (e.target.closest('.dropdown__menu a')) {
+      return; // pozwól przejść do strony
+    }
 
-  trigger.addEventListener('click', (e) => {
-    // blokujemy tylko toggle (bo to nie jest prawdziwy link)
+    // klik tylko w toggle (Behandlinger)
+    const trigger = e.target.closest('.nav__link');
+    if (!trigger) return;
+
     e.preventDefault();
 
     // zamknij inne
