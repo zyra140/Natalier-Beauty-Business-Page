@@ -29,6 +29,8 @@ if (document.querySelector(".section-natelier")) {
   obs.observe(sectionHeroEl);
 }
 
+
+
 /*=============== SHOW MENU ===============*/
 const showMenu = (toggleId, navId) => {
   const toggle = document.getElementById(toggleId),
@@ -72,16 +74,18 @@ closeBtn.addEventListener("click", () => {
 const dropdownItems = document.querySelectorAll('.dropdown__item');
 
 dropdownItems.forEach(item => {
-  item.addEventListener('click', (e) => {
-    // zapobiega przejściu w link (jeśli jest <a>)
+  const trigger = item.querySelector('.nav__link'); // klik tylko tutaj
+
+  trigger.addEventListener('click', (e) => {
+    // blokujemy tylko toggle (bo to nie jest prawdziwy link)
     e.preventDefault();
 
-    // zamyka inne (opcjonalne – UX lepszy)
+    // zamknij inne
     dropdownItems.forEach(i => {
       if (i !== item) i.classList.remove('active');
     });
 
-    // toggle aktualnego
+    // toggle
     item.classList.toggle('active');
   });
 });
