@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Natelier to salon piękności w oslo" />
+
+    <link rel="icon" href="images/logo.png" />
+    <link rel="apple-touch-icon" href="images/logo.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <script defer src="js/script.js"></script>
+
+    <title>Natelier &mdash; Din Pålitelige Skjønnhetssalong i Oslo</title>
+  </head>
+
+  <!-- NAV -->
+  <body class="page-behandlinger">
+    <div class="logo-container">
+      <img class="logo" src="images/logo.png" alt="Natelier logo" />
+    </div>
+<!--=============== HEADER ===============-->
+       <header class="header">
+      <nav class="nav nav-container">
+        <div class="nav__data">
+          <a href="index.html" class="nav__logo">
+            <i class="ri-diamond-line"></i> Natelier Beauty
+          </a>
+               
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line nav__burger"></i>
+            <i class="ri-close-line nav__close"></i>
+          </div>
+        </div>
+
+<!--=============== NAV MENU ===============-->
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li><a href="index.html" class="nav__link">Hjem</a></li>
+               
+<!--=============== DROPDOWN 1 ===============-->
+            <li class="dropdown__item">
+              <div class="nav__link">
+                Behandlinger <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
+
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="vippeextensions.html" class="dropdown__link">
+                    <i class="ri-arrow-right-up-line"></i> Vippeextensions
+                  </a>                          
+                </li>
+
+                <li>
+                  <a href="negler.html" class="dropdown__link">
+                    <i class="ri-arrow-right-up-line"></i> Negler
+                  </a>
+                </li>
+
+                <li>
+                  <a href="fotbehandling.html" class="dropdown__link">
+                    <i class="ri-arrow-right-up-line"></i> Fotbehandling
+                  </a>
+                </li>
+
+                <li>
+                  <a href="bryn.html" class="dropdown__link">
+                    <i class="ri-arrow-right-up-line"></i> Bryn
+                  </a>
+                </li>
+
+                <li>
+                  <a href="vippeløft.html" class="dropdown__link">
+                    <i class="ri-arrow-right-up-line"></i> Vippeløft
+                  </a>
+                </li>
+
+                <li>
+                  <a href="pmu.html" class="dropdown__link">
+                    <i class="ri-arrow-right-up-line"></i> PMU
+                  </a>
+                </li>
+                        
+              </ul>
+            </li>
+
+            <li><a href="cennik.html" class="nav__link">Prisliste</a></li>
+                  
+            <li><a href="aboutUs.html" class="nav__link">Om Oss</a></li>
+
+            <li><a href="kontakt.html" class="nav__link">Kontakt</a></li>
+
+            <li class="btn-book">
+              <a class="nav__link" id="pop-up-button-open" href="#">BOOK</a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+    </header>
+        <!-- Cancellation note POP UP -->
+    <div class="pop-up" id="pop-up">
+      <div class="pop-up-header">
+        <h2 class="pop-up-h2">Avbestillingsregler:</h2>
+        <button class="x-button" id="pop-up-button-ok">&times;</button>
+      </div>
+      <div class="pop-up-body"> 
+        <p class="pop-up-text">
+            Du kan avbestille inntil 24 timer før avtalen uten kostnad. Ved uteblivelse eller sen avbestilling
+            (mindre enn 24 timers varsel) belastes 50 % av prisen for den bestilte behandlingen. Avtaler
+            som ikke blir avbestilt (no show) vil bli belastet med 100 % av prisen.
+        </p>
+      </div>
+      <div class="pop-up-ok">
+        <a class="pop-up-button" href="https://timma.no/salong/natelier" id="pop-up-button-ok" target="_blank">
+          OK
+        </a>
+      </div>
+    </div>
+    <div id="overlay"></div>
+      <section class="section-how">
+        <h1 class="heading-on-background">Vippeløft</h1>
+        <div class="container grid grid--2-cols grid--center-v">
+
+          <!-- Klassiske vipper -->
+         
+
+          <div class="step-img-box no-hover">
+            <img src="images_updated/fot22.png" class="step-img no-hover" alt="" />
+          </div>
+          <div class="step-text-box">
+            <h2 class="heading-secondary">
+              Fremhev dine egne vipper og behold et naturlig utseende.
+            </h2>
+            <p class="step-description">
+              Vippeløft er en naturlig måte å fremheve dine egne vipper uten extensions. Behandlingen løfter
+              og bøyer vippene fra roten, slik at de ser lengre, mørkere og mer definerte ut. Vi kombinerer ofte
+              med farging for maksimal effekt. Resultatet varer 6–8 uker. Etterbehandling: bruk
+              fuktighetsgivende serum anbefalt av terapeuten.
+            </p>
+          </div>
+        </div>
+        
+        <div class="container grid grid--2-cols grid--center-v">
+          <div class="step-text-box">
+            <p class="step-description">
+              <b>Tips:</b> Bruk vippevekstserum i 4 uker først, og kom deretter på vippeløft!
+            </p>
+            <h3 class="heading-small">Perfekt for:</h3>
+            <p class="step-description"> - Rett eller nedovervoksende vipper</p>
+            <p class="step-description"> - Kunder som foretrekker en naturlig «clean girl»-look</p>
+            <p class="step-description"> - Vil ikke bruke øyenvippebøyer hver dag</p>
+          </div>
+          <div class="step-img-box no-hover">
+            <img src="images_updated/fot23.png" class="step-img no-hover" alt="" />
+          </div>
+        </div> 
+      </section>
+
+      
+    <!-- FOOTER -->
+ <footer class="footer">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <a href="index.html" class="footer-logo">
+            <img class="footer-logo-natelier" src="images/logo.png" alt="Natelier logo" />
+          </a>
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="https://www.instagram.com/natelier.no/" target="_blank"
+                ><img
+                  class="social-icon"
+                  src="icons/logo-instagram.svg"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a class="footer-link" href="https://www.facebook.com/profile.php?id=61553806258346&locale=pl_PL" target="_blank"
+                ><img
+                  class="social-icon"
+                  src="icons/svgviewer-output.svg"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a class="footer-link" href="https://www.tiktok.com/@natelier.no" target="_blank"
+                ><img
+                  class="social-icon"
+                  src="icons/tiktok-svgrepo-com.svg"
+                  alt=""
+              /></a>
+            </li>
+          </ul>
+          <p class="copyright">
+            Copyright &copy; <span class="year">2027</span> by Natelier, Inc. All rights reserved.
+          </p>
+        </div>
+        <div class="adress-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <a class="footer-link" href="tel:+4792552906">+47 92552906</a>
+            <a class="footer-link" href="mailto:natelier.no@gmail.com">natelier.no@gmail.com</a>
+            <a class="footer-link">Majorstuveien 13 a 0353 Oslo</a>
+          </address>
+        </div>
+        <nav class="nav-col">
+          <p class="footer-heading">Socials</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="https://www.facebook.com/profile.php?id=61553806258346&locale=pl_PL " target="_blank">Facebook</a></li>
+            <li><a class="footer-link" href="https://www.instagram.com/natelier.no/" target="_blank">Instagram</a></li>
+            <li><a class="footer-link" href="https://www.tiktok.com/@natelier.no" target="_blank">Tik tok</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-col">
+          <p  class="footer-heading">Book now</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Bestill din time nå</a></li>
+            <li><a class="footer-link" href="cennik.html">Prisliste</a></li>
+            <li><a class="footer-link" href="aboutUs.html">Om oss</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-col">
+          <p class="footer-heading">Behandlinger</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="vippeextensions.html">Vippeextensions</a></li>
+            <li><a class="footer-link" href="negler.html">Negler</a></li>
+            <li><a class="footer-link" href="fotbehandling.html">Fotbehendling</a></li>
+            <li><a class="footer-link" href="bryn.html">Bryn</a></li>
+            <li><a class="footer-link" href="vippeløft.html">Vippeløft</a></li>
+            <li><a class="footer-link" href="pmu.html">PMU</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
