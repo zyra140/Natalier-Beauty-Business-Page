@@ -1057,3 +1057,12 @@
     max-width: 400px;
   }
 }
+
+
+@media screen and (max-width: 1700px) {
+  .heading-on-background {
+    margin: auto;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+  }
+}
