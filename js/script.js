@@ -69,6 +69,59 @@ closeBtn.addEventListener("click", () => {
   overlay.classList.remove("active");
 });
 
+// TESTIMONIALS SCROLL BUTTONS
+const testimonialsTrack = document.querySelector('.testimonials-track');
+const testimonialsPrev = document.querySelector('.testimonial-control--prev');
+const testimonialsNext = document.querySelector('.testimonial-control--next');
+
+if (testimonialsTrack && testimonialsPrev && testimonialsNext) {
+  const testimonialCards = testimonialsTrack.querySelectorAll('.testimonial-card');
+  let currentTestimonial = 0;
+  const testimonialCount = testimonialCards.length;
+
+  const getScrollStep = () => {
+    const style = window.getComputedStyle(testimonialsTrack);
+    const gap = parseFloat(style.gap) || 24;
+    return testimonialCards[0].offsetWidth + gap;
+  };
+
+  const scrollToTestimonial = (index) => {
+    const step = getScrollStep();
+    testimonialsTrack.scrollTo({ left: index * step, behavior: 'smooth' });
+  };
+
+  const showPrev = () => {
+    currentTestimonial = (currentTestimonial - 1 + testimonialCount) % testimonialCount;
+    scrollToTestimonial(currentTestimonial);
+  };
+
+  const showNext = () => {
+    currentTestimonial = (currentTestimonial + 1) % testimonialCount;
+    scrollToTestimonial(currentTestimonial);
+  };
+
+  testimonialsPrev.addEventListener('click', () => {
+    showPrev();
+    resetTestimonialsAutoScroll();
+  });
+
+  testimonialsNext.addEventListener('click', () => {
+    showNext();
+    resetTestimonialsAutoScroll();
+  });
+
+  let testimonialsTimer = setInterval(() => {
+    showNext();
+  }, 15000);
+
+  const resetTestimonialsAutoScroll = () => {
+    clearInterval(testimonialsTimer);
+    testimonialsTimer = setInterval(() => {
+      showNext();
+    }, 15000);
+  };
+}
+
 // DROPDOWN ON MOBILE DEIVCES
 
 const dropdownItems = document.querySelectorAll('.dropdown__item');
