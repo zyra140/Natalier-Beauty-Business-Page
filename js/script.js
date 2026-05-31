@@ -90,14 +90,64 @@ if (testimonialsTrack && testimonialsPrev && testimonialsNext) {
     testimonialsTrack.scrollTo({ left: index * step, behavior: 'smooth' });
   };
 
+  const testimonialDotsContainer = document.querySelector('.testimonial-dots');
+  const testimonialDots = [];
+
+  const updateActiveDot = () => {
+    testimonialDots.forEach((dot, index) => {
+      dot.classList.toggle('active', index === currentTestimonial);
+    });
+  };
+
+  const renderDots = () => {
+    if (!testimonialDotsContainer) return;
+    testimonialDotsContainer.innerHTML = '';
+    testimonialCards.forEach((_, index) => {
+      const dot = document.createElement('button');
+      dot.type = 'button';
+      dot.className = 'testimonial-dot';
+      dot.setAttribute('aria-label', `Show testimonial ${index + 1}`);
+      dot.addEventListener('click', () => {
+        currentTestimonial = index;
+        scrollToTestimonial(currentTestimonial);
+        updateActiveDot();
+        resetTestimonialsAutoScroll();
+      });
+      testimonialDotsContainer.appendChild(dot);
+      testimonialDots.push(dot);
+    });
+  };
+
+  const syncDotsToScroll = () => {
+    const step = getScrollStep();
+    const nearestIndex = Math.round(testimonialsTrack.scrollLeft / step);
+    if (nearestIndex !== currentTestimonial && nearestIndex >= 0 && nearestIndex < testimonialCount) {
+      currentTestimonial = nearestIndex;
+      updateActiveDot();
+    }
+  };
+
+  let scrollTicking = false;
+  testimonialsTrack.addEventListener('scroll', () => {
+    if (!scrollTicking) {
+      scrollTicking = true;
+      window.requestAnimationFrame(() => {
+        syncDotsToScroll();
+        scrollTicking = false;
+      });
+    }
+  });
+
   const showPrev = () => {
     currentTestimonial = (currentTestimonial - 1 + testimonialCount) % testimonialCount;
     scrollToTestimonial(currentTestimonial);
+    updateActiveDot();
   };
 
   const showNext = () => {
     currentTestimonial = (currentTestimonial + 1) % testimonialCount;
     scrollToTestimonial(currentTestimonial);
+    updateActiveDot();
   };
 
   testimonialsPrev.addEventListener('click', () => {
@@ -110,15 +160,18 @@ if (testimonialsTrack && testimonialsPrev && testimonialsNext) {
     resetTestimonialsAutoScroll();
   });
 
+  renderDots();
+  updateActiveDot();
+
   let testimonialsTimer = setInterval(() => {
     showNext();
-  }, 15000);
+  }, 5000);
 
   const resetTestimonialsAutoScroll = () => {
     clearInterval(testimonialsTimer);
     testimonialsTimer = setInterval(() => {
       showNext();
-    }, 15000);
+    }, 5000);
   };
 }
 
